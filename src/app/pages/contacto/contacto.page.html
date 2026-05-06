@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Contacto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <!-- Entrada de Nombre -->
+    <ion-item>
+      <ion-label position="stacked">Nombre Completo</ion-label>
+      <ion-input type="text" placeholder="Ej. Juan Pérez"></ion-input>
+    </ion-item>
+
+    <!-- Entrada de Correo con validación de tipo -->
+    <ion-item>
+      <ion-label position="stacked">Correo Electrónico</ion-label>
+      <ion-input type="email" placeholder="correo@ejemplo.com"></ion-input>
+    </ion-item>
+
+    <!-- Selector de asunto (elemento extra) -->
+    <ion-item>
+      <ion-label position="stacked">Asunto</ion-label>
+      <ion-select placeholder="Selecciona uno">
+        <ion-select-option value="soporte">Soporte Técnico</ion-select-option>
+        <ion-select-option value="ventas">Ventas</ion-select-option>
+        <ion-select-option value="otro">Otro</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <!-- Área de mensaje -->
+    <ion-item>
+      <ion-label position="stacked">Mensaje</ion-label>
+      <ion-textarea rows="4" placeholder="Escribe tu mensaje aquí..."></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <!-- Botón de envío -->
+  <div class="ion-padding-top">
+    <ion-button expand="block" shape="round">
+      Enviar Mensaje
+      <ion-icon slot="end" name="send-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>
